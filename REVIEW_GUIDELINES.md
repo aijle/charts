@@ -84,7 +84,7 @@ The chart label string contains the version, so if it is specified, whenever the
 - Remove `helm.sh/chart` label in `spec.selector.matchLabels` if it exists
 - Bump patch version of the Chart
 
-##### For Deployments, StatefulSets, DaemonSets >=apps/v1beta2
+##### For Deployments, StatefulSets, DaemonSets >=apps/v1
 
 - Remove `helm.sh/chart` label in `spec.selector.matchLabels` if it exists
 - Bump major version of the Chart as it is a breaking change

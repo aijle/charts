@@ -99,7 +99,7 @@ Return the appropriate apiVersion for deployment.
 */}}
 {{- define "kubewatch.deployment.apiVersion" -}}
 {{- if semverCompare "<1.14-0" .Capabilities.KubeVersion.GitVersion -}}
-{{- print "apps/v1beta2" -}}
+{{- print "apps/v1" -}}
 {{- else -}}
 {{- print "apps/v1" -}}
 {{- end -}}

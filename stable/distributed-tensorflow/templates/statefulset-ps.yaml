@@ -2,7 +2,7 @@
 {{- $batchsize := .Values.hyperparams.batchsize -}}
 {{- $trainsteps := .Values.hyperparams.trainsteps -}}
 
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: {{ .Release.Name }}-ps
